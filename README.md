@@ -1,3 +1,19 @@
+# Personal Web Portfolio
+
+This is my personal web portfolio built with React, TypeScript, and Vite.
+
+- Modern stack: React + TypeScript + Vite
+- Fast development with HMR
+- Custom components and hooks
+
+Feel free to explore the code and design!
+
+---
+
+## Original Template Info
+
+This project was bootstrapped with the Vite React + TypeScript template. See below for original template notes:
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
