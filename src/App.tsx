@@ -1,5 +1,12 @@
-import { SiReact, SiExpo, SiTypescript, SiExpress } from "react-icons/si";
-import { Button } from "@/components/ui/button";
+import {
+  SiReact,
+  SiExpo,
+  SiTypescript,
+  SiExpress,
+  SiLinkedin,
+  SiGithub,
+} from "react-icons/si";
+import { Mail } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -9,15 +16,6 @@ import {
 } from "@/components/ui/carousel";
 
 function App() {
-  const handleMailto = () => {
-    const email = "alifr.alcafi@gmail.com";
-    const subject = "Hello Alif!";
-    const body = "I would like to connect with you.";
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink, "_blank");
-  };
   return (
     <main className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center px-4">
       {/* Hero Section */}
@@ -35,9 +33,6 @@ function App() {
         <p className="text-xl md:text-2xl text-muted-foreground mb-8">
           Frontend and Backend Developer
         </p>
-        <Button size="lg" className="px-8 py-4 text-lg" onClick={handleMailto}>
-          Contact Me
-        </Button>
       </section>
 
       {/* Featured Skills Section */}
@@ -169,6 +164,52 @@ function App() {
           bridge the gap between backend and frontend teams. Let&apos;s connect
           to explore opportunities for collaboration and innovation!
         </p>
+      </section>
+
+      {/* Contact Section */}
+      <section className="w-full max-w-2xl py-12 text-center">
+        <h2 className="text-2xl font-semibold mb-2">Get In Touch</h2>
+        <p className="text-muted-foreground mb-8">
+          Feel free to reach out through any of the channels below.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a
+            href="mailto:arifu.arukafi@gmail.com"
+            className="group flex flex-col items-center gap-3 bg-card border border-border rounded-xl p-6 hover:border-primary hover:shadow-md transition-all duration-200"
+          >
+            <Mail className="size-8 text-primary group-hover:scale-110 transition-transform duration-200" />
+            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
+              Email
+            </span>
+            <span className="text-sm font-semibold break-all">
+              arifu.arukafi@gmail.com
+            </span>
+          </a>
+          <a
+            href="https://linkedin.com/in/alifalcafi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 bg-card border border-border rounded-xl p-6 hover:border-primary hover:shadow-md transition-all duration-200"
+          >
+            <SiLinkedin className="size-8 text-blue-600 group-hover:scale-110 transition-transform duration-200" />
+            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
+              LinkedIn
+            </span>
+            <span className="text-sm font-semibold">Alif Robby Alcafi</span>
+          </a>
+          <a
+            href="https://github.com/MbuuL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center gap-3 bg-card border border-border rounded-xl p-6 hover:border-primary hover:shadow-md transition-all duration-200"
+          >
+            <SiGithub className="size-8 text-foreground group-hover:scale-110 transition-transform duration-200" />
+            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">
+              GitHub
+            </span>
+            <span className="text-sm font-semibold">MbuuL</span>
+          </a>
+        </div>
       </section>
     </main>
   );
