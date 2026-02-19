@@ -1,46 +1,48 @@
-# Personal Web Portfolio
+# Alif Robby Alcafi — Personal Portfolio
 
-This is my personal web portfolio built with React, TypeScript, and Vite.
+Hi, I'm **Alif Robby Alcafi**, a Frontend and Backend Developer fueled by brewed coffee, instant cup noodles, and a dream. I specialize in building modern web and mobile applications, with a dual-stack background that lets me understand and bridge both sides of the development workflow.
 
-- Modern stack: React + TypeScript + Vite
-- Fast development with HMR
-- Custom components and hooks
+**Skills:** React · React Native · Expo · TypeScript · Express.js
 
-Feel free to explore the code and design!
+**Contact:**
+
+- Email: arifu.arukafi@gmail.com
+- LinkedIn: [alifalcafi](https://linkedin.com/in/alifalcafi)
+- GitHub: [MbuuL](https://github.com/MbuuL)
 
 ---
 
-## Original Template Info
+## About This Project
 
-This project was bootstrapped with the Vite React + TypeScript template. See below for original template notes:
+This is my personal portfolio website — a single-page app showcasing my skills, featured experience, and contact information.
 
-## React + TypeScript + Vite
+**Stack:**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [React 19](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vitejs.dev) with HMR via SWC
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [shadcn/ui](https://ui.shadcn.com) component library
+- [ESLint](https://eslint.org) + [Prettier](https://prettier.io) for code quality
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+**Prerequisites:** [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+# Install dependencies
+pnpm install
 
-- Configure the top-level `parserOptions` property like this:
+# Start the development server
+pnpm dev
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+# Build for production
+pnpm build
+
+# Preview the production build
+pnpm preview
+
+# Lint the codebase
+pnpm lint
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
