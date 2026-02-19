@@ -14,7 +14,7 @@ Feel free to explore the code and design!
 
 This project was bootstrapped with the Vite React + TypeScript template. See below for original template notes:
 
-# React + TypeScript + Vite
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

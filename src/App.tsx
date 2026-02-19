@@ -14,7 +14,7 @@ function App() {
     const subject = "Hello Alif!";
     const body = "I would like to connect with you.";
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink, "_blank");
   };
@@ -30,7 +30,7 @@ function App() {
           />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I'm Alif Robby Alcafi
+          Hi, I&apos;m Alif Robby Alcafi
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8">
           Frontend and Backend Developer
@@ -89,8 +89,8 @@ function App() {
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Developed a website dedicated to testing UI components. Each
-                    component is prefixed with 'test-' to ensure clarity and
-                    focus on isolated testing and validation.
+                    component is prefixed with &apos;test-&apos; to ensure
+                    clarity and focus on isolated testing and validation.
                   </p>
                 </div>
               </CarouselItem>
@@ -166,8 +166,8 @@ function App() {
           and a dream, I specialize in both backend and frontend development.
           This dual expertise gives me a unique edge in understanding the entire
           workflow, allowing me to provide better solutions and effectively
-          bridge the gap between backend and frontend teams. Let's connect to
-          explore opportunities for collaboration and innovation!
+          bridge the gap between backend and frontend teams. Let&apos;s connect
+          to explore opportunities for collaboration and innovation!
         </p>
       </section>
     </main>
