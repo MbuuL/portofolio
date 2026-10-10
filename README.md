@@ -1,6 +1,6 @@
 # Alif Robby Alcafi — Portfolio
 
-Personal portfolio site: a single dark-themed page with skills, experience and contact links.
+Personal portfolio site: a single dark-themed page with skills, projects and contact links.
 
 **Stack:** React 19, TypeScript, Vite (SWC), Tailwind CSS v4, ESLint + Prettier.
 

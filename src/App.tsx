@@ -18,32 +18,19 @@ const skills = [
 
 const projects = [
   {
-    title: "WhatsApp Stock Bot",
-    text: "Created and maintain a WhatsApp bot for financial stocks. Fetches data from public APIs, processes and visualizes it as graphs, and sends results/calculations directly to users via WhatsApp.",
+    title: "Arcanum (Password Manager)",
+    href: "https://github.com/MbuuL/password-manager",
+    text: "Self-hosted, zero-knowledge password manager. Credentials are encrypted in the browser with AES-GCM-256, so the server only stores ciphertext. Express 5 + PostgreSQL API with encrypted vault sync, React 19 frontend.",
   },
   {
-    title: "Component Testing Website",
-    text: "Developed a website dedicated to testing UI components. Each component is prefixed with 'test-' to ensure clarity and focus on isolated testing and validation.",
+    title: "Simple Chat",
+    href: "https://github.com/MbuuL/simple-chat",
+    text: "Real-time chat with public and private rooms, live online presence and JWT auth. React 19 with TanStack, Express 5 with WebSocket, Drizzle ORM and PostgreSQL.",
   },
   {
-    title: "Logistics System Enhancement",
-    text: "Maintain and add new features to an existing logistics system. Notably implemented PDF upload, preview, and update functionality for Delivery Orders during both creation and editing processes.",
-  },
-  {
-    title: "Admin Dashboard Development",
-    text: "Built a comprehensive admin dashboard from scratch, managing customer, employee, sales order and delivery order.",
-  },
-  {
-    title: "Company Front Page",
-    text: "Designed and developed a modern, responsive company landing page to enhance brand presence and customer engagement.",
-  },
-  {
-    title: "React Native Sales App",
-    text: "Created a React Native application to empower salespeople with tools for creating sales order, browse existing products and even request price to a certain product.",
-  },
-  {
-    title: "Automated Deployment with GitHub Actions",
-    text: "Automated CI/CD pipelines using GitHub Actions to deploy applications seamlessly to development and production environments.",
+    title: "Local Logging",
+    href: "https://github.com/MbuuL/local-logging",
+    text: "Self-hosted application logging service. Register apps, ship logs through a token-based API and browse them in a web UI. Express 5, Drizzle ORM, PostgreSQL, React 19.",
   },
 ];
 
@@ -107,11 +94,20 @@ function App() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
         <ul className="divide-y divide-border">
-          {projects.map(({ title, text }) => (
+          {projects.map(({ title, href, text }) => (
             <li key={title} className="py-4">
-              <h3 className="font-semibold mb-1">{title}</h3>
+              <h3 className="font-semibold mb-1">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {title}
+                </a>
+              </h3>
               <p className="text-muted-foreground">{text}</p>
             </li>
           ))}
