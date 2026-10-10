@@ -6,7 +6,7 @@ import {
   SiLinkedin,
   SiGithub,
 } from "react-icons/si";
-import { Mail } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 
 const skills = [
   { name: "React", Icon: SiReact },
@@ -146,9 +146,10 @@ function App() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="inline-flex items-center gap-1 hover:underline"
                 >
                   {title}
+                  <ArrowUpRight className="size-4 text-muted-foreground" />
                 </a>
               </h3>
               <p className="text-muted-foreground">{text}</p>
